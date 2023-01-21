@@ -1,0 +1,133 @@
+:root {
+  --whiteblue3: #bcddff;
+  --whiteblue2: #daecff;
+  --whiteblue1: #f8f9fa;
+  --white1: #e5ecef;
+  --darkblue1: #192940;
+  --darkblue2: #a5cfcd;
+  --darkblue3: #4f595a;
+  --darkblue4: rgba(89,99,100,0.85);
+  --black1: rgba(50,50,50,0.5);
+  --black2: rgba(50,50,50,0.9);
+  --transparent: rgba(0,0,0,0);
+}
+
+body{
+  background: var(--darkblue3);
+  color: white;
+}
+a, h1, h2, h3, h4, h5, h6, p, span{
+  color: white;
+}
+b strong{
+  font-size: 20px;
+  margin-right: 10px;
+}
+.offcanvas{
+  background: var(--transparent);
+  border: 0;
+}
+.offcanvas.offcanvas-end{
+  border: 0;
+}
+.navbar-toggler{
+  background:var(--whiteblue2);
+  width: 3.5rem;
+  al
+}
+.jmdb_pic{
+  border-radius: 5px;
+}
+.project-card{
+  height: 100%;
+}
+.card-img-top {
+  width: 100%;
+  height: 17vw;
+  object-fit: cover;
+}
+.card-text{
+  text-align: justify;
+}
+.card-text, .card-title, .card-title h5{
+  color: black;
+}
+.card{
+  background: var(--darkblue2);
+  margin: 0.5rem;
+}
+.social-link{
+  color:var(--whiteblue1);
+}
+.social-link:hover{
+  color:var(--whiteblue2);
+}
+.full-height{
+  min-height:100vh;
+}
+.navbar-nav{
+  background:var(--darkblue4);
+  border-radius: 5px;
+}
+.nav-link{
+  padding: 0.9rem;
+  font-weight: bold;
+  color: var(--white1);
+  border: 2px solid var(--transparent);
+  border-radius: 5px;
+  background:none; 
+}
+.nav-link:focus{
+  color: var(--white1);
+}
+.nav-link:hover{
+  color: var(--white1);
+  border: 2px solid var(--white1);
+}
+.nav-link.extra{
+  font-weight: 1000;  
+  color: var(--transparent);
+  background:var(--transparent);
+  border: none;
+}
+.nav-link.extra:hover{
+  color: grey;
+  background: var(--black1);;
+  margin: 0;
+}
+.nav-link.active{
+  background:var(--whiteblue2);
+}
+.resume.btn {
+  color: var(--darkblue1);
+  background: white;
+  letter-spacing: .1rem;
+  font-weight: 700;
+  font-size: .875rem;
+  border: 2px solid transparent;
+  border-color: var(--clr-grey-1);
+  box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+.resume.btn:hover{
+  margin:0;
+  background: var(--whiteblue3);
+}
+.skill_container{
+  background: var(--black1);
+  border-radius: 20px;
+}
+.skill_div{
+  text-align: -webkit-center;
+  border-radius: 15px;
+  background: var(--black1);
+  min-width: 185px;
+}
+#intro{
+  background: var(--darkblue1);
+}
+.main{
+  position: sticky;
+  z-index: 100;
+}
