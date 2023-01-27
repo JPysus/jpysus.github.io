@@ -20,7 +20,9 @@
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 		<!--  -->
 
+		<!-- Custom -->
 		<link rel="stylesheet" href="./assets/css/style.css">
+		<script src="assets/js/navbar_scroll.js"></script>
 	</head>
 	<body>
 
@@ -28,27 +30,30 @@
 		<!-- nav bar-->
 		<header>
 			<nav id="navbar1 "class="container-lg navbar navbar-expand-lg fixed-top justify-content-end">
-				<button class="navbar-toggler mx-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+				<button class="navbar-toggler mx-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="offcanvas offcanvas-end" tabindex="0" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-					<button type="button" class="offcanvas-header btn-close btn-close-white align-self-end me-3 mt-3 text-primary" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-					<div class="offcanvas-body justify-content-end">
+				<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+					<!-- <button class="navbar-toggler align-self-end" type="button" data-bs-dismiss="offcanvas" aria-label="Close"
+						style="margin-top: 8px; margin-right: 34px">
+						<span class="navbar-toggler-icon"></span>
+					</button> -->
+					<div class="d-flex flex-column align-items-end ">
 						<div class="navbar-nav">
-							<a class="nav-link" href="#intro">Introduction</a>
+							<a class="nav-link active" href="#intro">Introduction</a>
 							<a class="nav-link" href="#about">About</a>
 							<a class="nav-link" href="#skills">Skills</a>
 							<a class="nav-link" href="#education">Education</a>
 							<a class="nav-link" href="#projects">Projects</a>
-							<a class="nav-link resume btn" href="https://drive.google.com/file/d/1-N34oRp8dR03tsYQLeMQUpgGy8k6Bf1z">Résumé</a>
+							<a class="nav-link resume btn" target="_target" href="https://drive.google.com/file/d/1-N34oRp8dR03tsYQLeMQUpgGy8k6Bf1z">Résumé</a>
 						</div>
+						<a class="nav-link extra" href="#bottom">JMDB</a>
 					</div>
-					<a class="d-block align-self-end nav-link extra">JMDB</a>
 				</div>
 			</nav>
 		</header>
 		<!--  -->
-		<div data-bs-spy="scroll" data-bs-target="#navbar1" data-bs-smooth-scroll="true" tabindex="0">
+		<div data-bs-spy="scroll" data-bs-target="#navbar1" data-bs-smooth-scroll="false" tabindex="-1">
 
 			<!-- intro -->
 			<section class="intro full-height align-items-center justify-content-center d-flex mb-4" id="intro">
@@ -181,8 +186,8 @@
 					<i class="fas fa-graduation-cap"></i> 
 					My Education
 				</h1>
-				<div class="d-flex flex-row mb-3 p-2">
-					<div class="card w-50 p-2 border-0">
+				<div id="all_school" class="d-flex flex-row mb-3 p-2">
+					<div class="card_school card w-50 p-2 border-0">
 						<img src="./assets/images/educat/college1.jpg" class="card-img-top" alt="..." height="361">
 						<div class="card-body">
 							<h5 class="card-title">Technological Institute of the Philippines</h5>
@@ -191,7 +196,7 @@
 						</div>
 					</div>
 
-					<div class="card w-50 p-2 border-0">
+					<div class="card_school card w-50 p-2 border-0">
 						<img src="./assets/images/educat/shs.jpg" class="card-img-top" alt="..." height="361">
 						<div class="card-body">
 							<h5 class="card-title">Rizal National Science High School</h5>
@@ -206,7 +211,7 @@
 				<h1 class="heading">
 					Projects
 				</h1>
-				<div class="row justify-content-center">
+				<div id="all_projects" class="row justify-content-center">
 					<div class="col-md-4 p-2">
 						<div class="project-card card">
 							<img class="card-img-top" src="./assets/images/projects/transpose.PNG" alt="Transpose Homepage">
@@ -278,7 +283,7 @@
 			<!--  -->
 		</div>
 		<!-- footer -->
-		<footer class="footer text-center p-3 ">
+		<footer id="bottom" class="footer text-center p-3 ">
 			<br>
 			<p>Made by JMDB | HTML, JavaScript and CSS</p>
 			<div>

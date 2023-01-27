@@ -18,17 +18,22 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #ddd; 
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: #aaa; 
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555555; 
+  background: #888; 
+}
+
+/* Handle on Click */
+::-webkit-scrollbar-thumb:Active {
+  background: #555;
 }
 body{
   background: var(--darkblue3);
@@ -41,17 +46,13 @@ b strong{
   font-size: 20px;
   margin-right: 10px;
 }
-.offcanvas{
-  background: var(--transparent);
-  border: 0;
-}
-.offcanvas.offcanvas-end{
-  border: 0;
-}
 .navbar-toggler{
-  background:var(--whiteblue2);
+  background:var(--whiteblue3);
   width: 3.5rem;
-  al
+  margin-bottom: 15px;
+}
+.navbar-toggler.collapsed{
+  background:var(--whiteblue1);
 }
 .jmdb_pic{
   border-radius: 5px;
@@ -148,4 +149,28 @@ b strong{
 .main{
   position: sticky;
   z-index: 100;
+}
+@media (max-width: 800px) {
+  .skill_div{
+    min-width: 175px;
+    max-width: 40%;
+  }
+  .project-card{
+    max-width:450px;
+  }
+  .card_school{
+    text-align: initial;
+    width: 85%!important
+  }
+  .skill_container{
+    padding: 2.5rem!important;
+  }
+  #all_projects{
+    text-align: -webkit-center;
+  }
+  #all_school{
+    display: block!important;
+    text-align: -webkit-center;
+  }
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
 }
