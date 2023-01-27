@@ -49,7 +49,6 @@ b strong{
 .navbar-toggler{
   background:var(--whiteblue3);
   width: 3.5rem;
-  margin-bottom: 15px;
 }
 .navbar-toggler.collapsed{
   background:var(--whiteblue1);
