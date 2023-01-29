@@ -151,8 +151,17 @@ b strong{
 }
 @media (max-width: 800px) {
   .skill_div{
-    min-width: 175px;
+    min-width: 135px;
     max-width: 40%;
+  }
+
+  .skill_name{
+    font-size: 1.2rem;
+    contain: inline-size;
+  }
+
+  .skill_img{
+    width: 90px;
   }
   .project-card{
     max-width:450px;
