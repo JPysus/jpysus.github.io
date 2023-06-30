@@ -1,0 +1,105 @@
+const cert_list = [
+  {
+    "src":"jpcs_datascience.jpg",
+    "alt":"JPCS - Data Science w/ Python",
+    "hed":"JPCS - Data Science w/ Python",
+    "add":""
+  },
+  {
+    "src":"wadhwani.jpg",
+    "alt":"Wadhwani Foundaton - Global Jury Validation and RV Certificate",
+    "hed":"Wadhwani Foundaton - Global Jury Validation and RV Certificate",
+    "add":""
+  },
+  {
+    "src":"22-23_1st.jpg",
+    "alt":"Maintained Lister's (4th yr - 1st yr)",
+    "hed":"VPAA's Lister",
+    "add":"4th yr 1st sem, 1.45 GWA",
+    "mor":[
+      {
+        "src":"21-22_2nd.jpg",
+        "hed":"VPAA's Lister",
+        "add":"3rd yr 2nd sem, 1.34 GWA"
+      }, 
+      {
+        "src":"21-22_1st.jpg",
+        "hed":"VPAA's Lister",
+        "add":"3rd yr 1st sem, 1.28 GWA"
+      }, 
+      {
+        "src":"20-21_2nd.jpg",
+        "hed":"VPAA's Lister",
+        "add":"2nd yr 2nd sem, 1.43 GWA"
+      }, 
+      {
+        "src":"20-21_1st.jpg",
+        "hed":"VPAA's Lister",
+        "add":"2nd yr 1st sem, 1.45 GWA<br/>Lister's certificate weren't provided by the school from this semester and school year before."
+      },  
+      {
+        "src":"19-20_2nd.jpg",
+        "hed":"Dean's Lister",
+        "add":"1st yr 2nd sem, 1.51 GWA<br/>Lister's certificate weren't provided by the school."
+      }, 
+      {
+        "src":"19-20_1st.jpg",
+        "hed":"Dean's Lister",
+        "add":"1st yr 1st sem, 1.64 GWA<br/>Lister's certificate weren't provided by the school."
+      },
+      {
+        "src":"22-23_2nd.jpg",
+        "hed":"VPAA's Lister(?)",
+        "add":"4th yr 2nd sem, 1.38 GWA<br/>E-Certificate for this semester hasn't been distributed yet."
+      },
+    ]
+  },
+  {
+    "src":"jpcs_blockchain.jpg",
+    "alt":"JPCShares: Introduction to Blockchain Technology Webinar",
+    "hed":"JPCShares: Introduction to Blockchain Technology Webinar",
+    "add":""
+  },
+  {
+    "src":"acm_fest_1.jpg",
+    "alt":"ACM Fest",
+    "hed":"ACM Fest Day 1",
+    "add":"",
+    "mor":[
+      {
+        "src":"acm_fest_2.jpg", 
+        "hed":"ACM Fest Day 2",
+        "add":""
+      }, 
+      {
+        "src":"acm_fest_3.jpg", 
+        "hed":"ACM Fest Day 3",
+        "add":""
+      }
+    ]
+  },
+  {
+    "src":"cyberspace.jpg",
+    "alt":"Cyberlinked A Connected Community of Students Towards A Safer Cyberspace",
+    "hed":"Cyberlinked A Connected Community of Students Towards A Safer Cyberspace",
+    "add":""
+  },
+  {
+    "src":"odli.jpg",
+    "alt":"Online Database Library Instruction",
+    "hed":"Online Database Library Instruction",
+    "add":""
+  },
+  {
+    "src":"dsc_jira.jpg",
+    "alt":"Project Management Tool Training Using JIRA Software",
+    "hed":"Project Management Tool Training Using JIRA Software",
+    "add":""
+  },
+  {
+    "src":"indent.jpg",
+    "alt":"Indent: A Capacity Building on Basic Patent Search",
+    "hed":"Indent: A Capacity Building on Basic Patent Search",
+    "add":""
+  }
+]
