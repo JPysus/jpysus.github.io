@@ -1,15 +1,18 @@
 :root {
+  --whiteblue4: #a7fbffe8;
   --whiteblue3: #bcddff;
-  --whiteblue2: #daecff;
+  --whiteblue2: rgba(228,255,255,0.90);
   --whiteblue1: #f8f9fa;
-  --white1: #e5ecef;
+  --white1: rgba(255,255,255,0.90);
   --darkblue1: #192940;
-  --darkblue2: #a5cfcd;
-  --darkblue3: #4f595a;
-  --darkblue4: rgba(89,99,100,0.85);
+  --darkblue2: rgba(0,16,39,0.85);
+  --grayblue1: rgba(89,99,100,0.85);
+  --grayblue2: #4f595a;
+  --grayblue3: rgba(81,103,107,0.93);
+  --grayblue4: rgba(108,136,141,0.94);
   --black1: rgba(50,50,50,0.5);
   --black2: rgba(50,50,50,0.9);
-  --transparent: rgba(0,0,0,0);
+  --red1: rgba(255,110,119,0.89);
 }
 /* width */
 ::-webkit-scrollbar {
@@ -32,19 +35,57 @@
 }
 
 /* Handle on Click */
-::-webkit-scrollbar-thumb:Active {
+::-webkit-scrollbar-thumb:active {
   background: #555;
 }
 body{
-  background: var(--darkblue3);
+  background: var(--grayblue2);
   color: white;
 }
-a, h1, h2, h3, h4, h5, h6, p, span{
-  color: white;
+
+body .modal-dialog { /* Width */
+  max-width: 61.25rem;
+  max-height: 90vh;
+  width: auto !important;
+  display: inline-block;
 }
-b strong{
-  font-size: 20px;
-  margin-right: 10px;
+.modal {
+  z-index: -1;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-caption, .carousel-indicators{
+  filter:invert(100%);
+}
+.car_cont.prev{
+  top: 90%;
+  left: 0;
+  position: absolute;
+}
+.car_cont.next{
+  top: 90%;
+  right: 0;
+  position: absolute;
+}
+[data-bs-theme="light"] .car_cont.btn:hover{
+  color:gray;
+}
+.modal-open .modal {
+  z-index: 1056;
+}
+#modal_img_body img{
+  max-width: 100%;
+}
+.closebtn:hover{
+  background-color: var(--red1);
+  border: 1px solid;
+}
+
+#navbar1{
+  width: fit-content;
+  margin-right: 20px;
+  margin-left:  auto;
 }
 .navbar-toggler{
   background:var(--whiteblue3);
@@ -53,26 +94,80 @@ b strong{
 .navbar-toggler.collapsed{
   background:var(--whiteblue1);
 }
+
 .jmdb_pic{
   border-radius: 5px;
 }
-.project-card{
-  height: 100%;
+
+.full-height{
+  min-height:100vh;
 }
-.card-img-top {
-  width: 100%;
-  height: 17vw;
-  object-fit: cover;
-}
+
 .card-text{
   text-align: justify;
 }
-.card-text, .card-title, .card-title h5{
-  color: black;
+
+.card_school{
+  background: var(--whiteblue2);
+  height: 100%;
 }
-.card{
+.card_school > div{
+  height: inherit;
+}
+.card_school img{
+  max-height: 182px;
+  height: auto;
+  max-width: 182px;
+  width: 100%;
+}
+
+.card_cert{
+  background: var(--grayblue3);
+}
+.card_cert:hover, .card_cert:focus {
+  background: var(--grayblue4);
+}
+.card_cert.btn:active{
+  background: var(--darkblue1);
+}
+.card_cert *{
+  color: white!important;
+  text-shadow: 1px 0px 2px #000;
+}
+#projects h5{
+
+}
+#projects .card_bg{
   background: var(--darkblue2);
-  margin: 0.5rem;
+  transition: all 0.2s linear;
+}
+#projects .card_bg:hover{
+  background: var(--grayblue4);
+}
+#projects .card{
+  overflow: hidden;
+  max-height: 20rem;
+  min-height: 20rem;
+}
+#projects .card > img{
+  width: 100%;
+  height: 35vh;
+  object-fit: cover;
+}
+#projects .title{
+  min-height: 3em;
+  height: fit-content;
+}
+#projects .description{
+  position: absolute;
+  top: 85%;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  height: 100%;
+  width: 100%;
+  background: var(--white1);
+}
+#projects .card_bg:hover .description{
+  top: 30%;
 }
 .social-link{
   color:var(--whiteblue1);
@@ -80,41 +175,50 @@ b strong{
 .social-link:hover{
   color:var(--whiteblue2);
 }
-.full-height{
-  min-height:100vh;
-}
-.navbar-nav{
-  background:var(--darkblue4);
+.social-link:active svg{
+  color:var(--whiteblue3);
+  border: 1px solid var(--whiteblue1);
   border-radius: 5px;
 }
+
+.navbar-nav{
+  background:var(--grayblue1);
+  border-radius: 5px;
+}
+.nav-link.active{
+  background:var(--whiteblue2);
+}
 .nav-link{
+  text-shadow: 1px 0px 3px #000;
   padding: 0.9rem;
   font-weight: bold;
-  color: var(--white1);
-  border: 2px solid var(--transparent);
+  color: var(--whiteblue2);
+  border: 2px solid transparent;
   border-radius: 5px;
   background:none; 
 }
 .nav-link:focus{
-  color: var(--white1);
+  color: var(--whiteblue2);
 }
 .nav-link:hover{
+  color: var(--whiteblue2);
+  border: 2px solid var(--whiteblue2);
+}
+.nav-link:active{
   color: var(--white1);
-  border: 2px solid var(--white1);
+  background:var(--whiteblue3);
 }
 .nav-link.extra{
-  font-weight: 1000;  
-  color: var(--transparent);
-  background:var(--transparent);
+  text-shadow: 0 0 0 transparent;
+  font-weight: 1000;
+  color: transparent;
+  background: transparent;
   border: none;
 }
 .nav-link.extra:hover{
   color: grey;
   background: var(--black1);;
   margin: 0;
-}
-.nav-link.active{
-  background:var(--whiteblue2);
 }
 .resume.btn {
   color: var(--darkblue1);
@@ -126,6 +230,7 @@ b strong{
   border-color: var(--clr-grey-1);
   box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
   border-radius: var(--radius);
+  text-shadow: 0 0 0 transparent;
   transition: var(--transition);
 }
 .resume.btn:hover{
@@ -136,24 +241,35 @@ b strong{
   background: var(--black1);
   border-radius: 20px;
 }
+.skill_container .col{
+  text-align: -webkit-center;
+}
 .skill_div{
   text-align: -webkit-center;
   border-radius: 15px;
   background: var(--black1);
   min-width: 185px;
+  max-width: 40%;
+  height: 100%;
 }
 #intro{
   background: var(--darkblue1);
+  position: static;
 }
-.main{
+section{
   position: sticky;
-  z-index: 100;
+}
+@media (max-width: 991px) {
+  #navbar1{
+    margin-right: 10px;
+    margin-left:  auto;
+  }
+  .nav-link.extra, .navbar-nav{
+    display: table-row-group;
+  }
+
 }
 @media (max-width: 800px) {
-  .skill_div{
-    min-width: 135px;
-    max-width: 40%;
-  }
 
   .skill_name{
     font-size: 1.2rem;
@@ -163,22 +279,13 @@ b strong{
   .skill_img{
     width: 90px;
   }
-  .project-card{
-    max-width:450px;
-  }
-  .card_school{
-    text-align: initial;
-    width: 85%!important
-  }
   .skill_container{
     padding: 2.5rem!important;
   }
-  #all_projects{
-    text-align: -webkit-center;
-  }
-  #all_school{
-    display: block!important;
-    text-align: -webkit-center;
-  }
   /* CSS that should be displayed if width is equal to or less than 800px goes here */
+}
+@media (max-width: 576px) {
+  #projects .card_bg:hover .description{
+    top: 0%;
+  }
 }
