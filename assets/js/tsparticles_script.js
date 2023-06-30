@@ -1,7 +1,8 @@
       // All options can be found here: https://particles.js.org/docs/interfaces/Options_Interfaces_IOptions.IOptions.html
       // The slim version doesn't have the following plugins:
       // Absorbers, Emitters, PolygonMask, Interactivity Trail
-      const options = {
+      // this file is basically the config for the animations
+const options = {
   "autoPlay": true,
   "background": {
     "color": {
