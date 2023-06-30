@@ -88,11 +88,11 @@ body .modal-dialog { /* Width */
   margin-left:  auto;
 }
 .navbar-toggler{
-  background:var(--whiteblue3);
+  background:var(--grayblue4);
   width: 3.5rem;
 }
 .navbar-toggler.collapsed{
-  background:var(--whiteblue1);
+  background:var(--darkblue2);
 }
 
 .jmdb_pic{
