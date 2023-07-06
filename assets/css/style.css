@@ -1,4 +1,5 @@
 :root {
+  --whiteblue5: rgb(223 255 255 / 86%);
   --whiteblue4: #a7fbffe8;
   --whiteblue3: #bcddff;
   --whiteblue2: rgba(228,255,255,0.90);
@@ -13,6 +14,7 @@
   --black1: rgba(50,50,50,0.5);
   --black2: rgba(50,50,50,0.9);
   --red1: rgba(255,110,119,0.89);
+  --blue1: rgba(145,199,255,0.86);
 }
 /* width */
 ::-webkit-scrollbar {
@@ -186,7 +188,7 @@ body .modal-dialog { /* Width */
   border-radius: 5px;
 }
 .nav-link.active{
-  background:var(--whiteblue2);
+  background:var(--blue1);
 }
 .nav-link{
   text-shadow: 1px 0px 3px #000;
@@ -197,16 +199,13 @@ body .modal-dialog { /* Width */
   border-radius: 5px;
   background:none; 
 }
-.nav-link:focus{
-  color: var(--whiteblue2);
-}
 .nav-link:hover{
   color: var(--whiteblue2);
   border: 2px solid var(--whiteblue2);
 }
 .nav-link:active{
-  color: var(--white1);
-  background:var(--whiteblue3);
+  color: white;
+  background:var(--whiteblue5);
 }
 .nav-link.extra{
   text-shadow: 0 0 0 transparent;
@@ -225,7 +224,6 @@ body .modal-dialog { /* Width */
   background: white;
   letter-spacing: .1rem;
   font-weight: 700;
-  font-size: .875rem;
   border: 2px solid transparent;
   border-color: var(--clr-grey-1);
   box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
