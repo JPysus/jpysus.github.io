@@ -90,7 +90,7 @@ $(document).ready(function(){
     inner += `
       <div class="carousel-item active">
         <img src="./assets/images/certs/`+cert_list[index]['src']+`" class="w-100" alt="`+cert_list[index]['alt']+`">
-        <div class="carousel-caption position-static pb-0 d-none d-md-block">
+        <div class="carousel-caption position-static pb-0">
           <h5>`+cert_list[index]['hed']+`</h5>
           <p>`+cert_list[index]['add']+`</p>
         </div>
@@ -105,7 +105,7 @@ $(document).ready(function(){
         inner += `
       <div class="carousel-item">
         <img src="./assets/images/certs/`+cert_list[index]['mor'][i]['src']+`" class="w-100" alt="`+cert_list[index]['mor'][i]['hed']+`">
-        <div class="carousel-caption position-static pb-0 d-none d-md-block">
+        <div class="carousel-caption position-static pb-0">
           <h5>`+cert_list[index]['mor'][i]['hed']+`</h5>
           <p>`+cert_list[index]['mor'][i]['add']+`</p>
         </div>

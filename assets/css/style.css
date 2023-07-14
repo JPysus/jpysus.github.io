@@ -41,7 +41,12 @@
   background: #555;
 }
 body{
-  background: var(--grayblue2);
+  background: linear-gradient(
+    to bottom, 
+    rgb(57 75 95) 27%, 
+    rgb(151 81 81 / 17%) 100% 
+  );
+  /* background: var(--grayblue2); */
   color: white;
 }
 
@@ -251,8 +256,16 @@ body .modal-dialog { /* Width */
   height: 100%;
 }
 #intro{
-  background: var(--darkblue1);
+  background: linear-gradient(
+    to bottom, 
+    var(--darkblue1) 80%, 
+    transparent 100%
+  );
   position: static;
+}
+#intro > #intro_btn{
+  position: absolute;
+  bottom: 15%;
 }
 section{
   position: sticky;
