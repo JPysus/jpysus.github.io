@@ -85,6 +85,12 @@ const cert_list = [
     "add":""
   },
   {
+    "src":"dotnet_fundamentals.jpg",
+    "alt":".NET Fundamentals",
+    "hed":".NET Fundamentals",
+    "add":"Personally tho, watching YT tutorials about C# and .NET helped more on my understanding of this topic. I got this for the sake of having certificate for free :> ."
+  },
+  {
     "src":"odli.jpg",
     "alt":"Online Database Library Instruction",
     "hed":"Online Database Library Instruction",
