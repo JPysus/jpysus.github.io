@@ -1,0 +1,59 @@
+
+/*--------------------------------------------------------------
+  # Scroll-to-Top Button
+  --------------------------------------------------------------*/
+  :root {
+    --back-to-top-button-size: 2.8em;
+  
+    --color-accent: hsl(255 100% 50%);
+    --color-accent-bright: hsl(210, 100%, 49%);
+    --color-accent-alpha: hsla(210, 100%, 39%, 0.4);
+  }
+  
+  #toTopBtn {
+    animation-delay: 0s;
+  
+    min-width: var(--back-to-top-button-size);
+    height: var(--back-to-top-button-size);
+    border-radius: 50%;
+  
+    display: grid;
+    place-items: center;
+    
+    border: 2px solid white;
+    background-color: var(--color-accent);
+    box-shadow: 0 0 1em 0.2em var(--color-accent-alpha);
+  }
+  
+  #toTopBtn:hover {
+    background-color: var(--color-accent-bright);
+  }
+  
+  
+  /*
+    # Button animation
+    vvvvvvvvvvvvvvvvvvvvvvv*/
+  
+  @keyframes float {
+    0% {
+      box-shadow: 0 5px 5px 0px rgba(0,0,0,0.4);
+      transform: translatey(0px);
+    }
+    50% {
+      box-shadow: 0 5px 15px 0px rgba(0,0,0,0.2);
+      transform: translatey(-5px);
+    }
+    100% {
+      box-shadow: 0 5px 5px 0px rgba(0,0,0,0.4);
+      transform: translatey(0px);
+    }
+  }
+  .tooltip-arrow{
+    display:none!important;
+  }
+  .tooltip-inner{
+    box-shadow: 0 5px 5px 0px rgba(0,0,0,0)!important;
+    background:#fff;
+    color: #000;
+    border: 1px solid #37517e;
+  }
