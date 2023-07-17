@@ -25,6 +25,7 @@ const animateCSS = (element, animation, prefix = 'animate__') =>
  * Intro section
 spaghetti animation code
  */
+animateCSS('#intro_btn', 'fadeInUpBig')
 $(document).scroll(function () {
     if($(window).scrollTop() <= 100 && ($('#intro_btn').css('display') == 'none')){
         $.when($('#intro_btn').show()).done(function(){
