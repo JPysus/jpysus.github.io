@@ -12,11 +12,16 @@ const cert_list = [
     "add":""
   },
   {
-    "src":"22-23_1st.jpg",
-    "alt":"Maintained Lister's (4th yr - 1st yr)",
+    "src":"22-23_2nd.jpg",
     "hed":"VPAA's Lister",
-    "add":"4th yr 1st sem, 1.45 GWA",
+    "add":"4th yr 2nd sem, 1.38 GWA",
+    "alt":"Maintained Lister's (4th yr - 1st yr)",
     "mor":[
+      {
+        "src":"22-23_1st.jpg",
+        "hed":"VPAA's Lister",
+        "add":"4th yr 1st sem, 1.45 GWA"
+      },
       {
         "src":"21-22_2nd.jpg",
         "hed":"VPAA's Lister",
@@ -46,11 +51,6 @@ const cert_list = [
         "src":"19-20_1st.jpg",
         "hed":"Dean's Lister",
         "add":"1st yr 1st sem, 1.64 GWA<br/>Lister's certificate weren't provided by the school."
-      },
-      {
-        "src":"22-23_2nd.jpg",
-        "hed":"VPAA's Lister(?)",
-        "add":"4th yr 2nd sem, 1.38 GWA<br/>E-Certificate for this semester hasn't been distributed yet."
       },
     ]
   },
