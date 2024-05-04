@@ -1,25 +1,3 @@
-
-/*
-card_cert list
-the variable 'data' is from <script src="assets/json/generated_filenames.json"></script>
-*/
-
-var htmldata = ""
-  for (var i = 0; i < cert_list.length; i++) {
-    htmldata += `
-              <div class="col">
-                <div class="card card_cert btn">
-                  <img value="`+i+`"src="./assets/images/certs/`+cert_list[i]['src']+`" class="rounded-start p-3" alt="`+cert_list[i]['alt']+`">
-                  <div class="card-body">
-                    <h5 class="card-title text-center">`+cert_list[i]['alt']+`</h5>
-                  </div>  
-                </div>
-              </div>
-
-    `
-  }
-$('#cert_container').append(htmldata)
-
 /*
   carousel
   left key, previous image
@@ -35,34 +13,42 @@ $(document).bind('keyup', function(e) {
 });
 
 $(document).ready(function(){
-  /*
-  Navbar Scroll
-  */
-
-  // Add smooth scrolling to all links
+  /*Navbar Scroll*/
+  // Add smooth scrolling to all links buttons
   $("a").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
-      // Prevent default anchor click behavior
       event.preventDefault();
-
-      // Store hash
       var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 0, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
-    } // End if
+    }
   });
 
   /*
+  card_cert list
+  <script src="assets/json/cert_list.json"></script>
+  */
+  var htmldata = ""
+    for (var i = 0; i < cert_list.length; i++) {
+      htmldata += `
+                <div class="col">
+                  <div class="card card_cert btn">
+                    <img value="`+i+`"src="./assets/images/certs/`+cert_list[i]['src']+`" class="rounded-start p-3" alt="`+cert_list[i]['alt']+`">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">`+cert_list[i]['alt']+`</h5>
+                    </div>  
+                  </div>
+                </div>
+      `
+    }
+  $('#cert_container').append(htmldata)
+  
+  /*
   skill_cards
-  the variable 'data' is from <script src="assets/json/generated_filenames.json"></script>
+  <script src="assets/json/generated_filenames.json"></script>
   */
   var htmldata = ""
   for (var i = 0; i < data.length; i++) {
@@ -73,7 +59,6 @@ $(document).ready(function(){
                   <h4 class="skill_name">`+data[i].substr(0, data[i].length - 4).replace('_', ' ')+`</h4>
                 </div>
               </div>
-
     `
   }
   $('#skill_cards').append(htmldata)
@@ -98,6 +83,7 @@ $(document).ready(function(){
     `
     $('.car_cont').hide()
 
+    //if theres more, show previous and next and others on list
     if(cert_list[index].hasOwnProperty('mor') && Array.isArray(cert_list[index]['mor'])) {
       for(var i=0; i < cert_list[index]['mor'].length; i++){
 
