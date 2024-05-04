@@ -1,10 +1,13 @@
 const data = [
+    "Appian.png",
+    "AppScript.png",
     "Arduino.png",
     "C#.png",
     "C++.png",
     "CSS3.png",
     "Flask.png",
     "Flutter.png",
+    "FlutterFlow.png",
     "HTML5.png",
     "Java.png",
     "JavaScript.png",
@@ -12,7 +15,10 @@ const data = [
     "Livewire.png",
     "MySQL.png",
     "Oracle.png",
+    "Outsystems.png",
     "PHP.png",
     "Python.png",
-    "React_Native.png"
+    "React_Native.png",
+    "Salesforce.png",
+    "VBA.png"
 ]
