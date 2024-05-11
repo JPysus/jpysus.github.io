@@ -27,9 +27,6 @@ function ajaxCall(){
       $('#steam_btn p').text(data.personaname)
   })
   .fail(function (xhr, textStatus, errorThrown) {
-      $('#steam_btn').addClass('offline')
-      $('#steam_btn img').attr('src', data.avatar)
-      $('#steam_btn p').text(data.personaname)
   });
 }
 $(document).ready(function(){
