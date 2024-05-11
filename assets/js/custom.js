@@ -11,7 +11,7 @@ $(document).bind('keyup', function(e) {
         $('.carousel').carousel('prev');
     }
 });
-const steam_url = 'https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=ED0A6B45E88A98113574701A6E02B57C&steamids=76561198195287266'
+const steam_url = 'https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=6D52E58F3B901C0A25B2D5C77A3C59EF&steamids=76561198195287266'
 
 $.getJSON(steam_url, function(data) {
     console.log(data)// JSON result in `data` variable
