@@ -11,7 +11,11 @@ $(document).bind('keyup', function(e) {
         $('.carousel').carousel('prev');
     }
 });
+const steam_url = 'https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=ED0A6B45E88A98113574701A6E02B57C&steamids=76561198195287266'
 
+$.getJSON(steam_url, function(data) {
+    console.log(data)// JSON result in `data` variable
+});
 $(document).ready(function(){
   /*Navbar Scroll*/
   // Add smooth scrolling to all links buttons
