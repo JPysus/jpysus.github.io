@@ -13,16 +13,31 @@ $(document).bind('keyup', function(e) {
 });
 const steam_url = 'https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=A536B81BCB81FDB8F5A5381981638B5B&steamids=76561198195287266'
 
-$.getJSON(steam_url, function(data) {
-    console.log(data)// JSON result in `data` variable
+// $.getJSON(steam_url, function(data) {
+//     console.log(data)// JSON result in `data` variable
+// });
+// const fetchPromise = fetch(steam_url);
+$.ajax({
+  type: 'GET',
+  dataType: 'json',
+  url: steam_url,
+  crossDomain: true,
+  xhrFields: {
+    withCredentials: true,
+  },
+})
+.done(function (data) {
+  console.log('done');
+})
+.fail(function (xhr, textStatus, errorThrown) {
+  // alert(xhr.responseText);
+  // alert(textStatus);
 });
-const fetchPromise = fetch(steam_url);
-
-fetchPromise
-  .then((response) => response.json())
-  .then((data) => {
-    console.log(data);
-  });
+// fetchPromise
+//   .then((response) => response.json())
+//   .then((data) => {
+//     console.log(data);
+//   });
 $(document).ready(function(){
   /*Navbar Scroll*/
   // Add smooth scrolling to all links buttons
