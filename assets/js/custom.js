@@ -16,6 +16,13 @@ const steam_url = 'https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0
 $.getJSON(steam_url, function(data) {
     console.log(data)// JSON result in `data` variable
 });
+const fetchPromise = fetch(steam_url);
+
+fetchPromise
+  .then((response) => response.json())
+  .then((data) => {
+    console.log(data);
+  });
 $(document).ready(function(){
   /*Navbar Scroll*/
   // Add smooth scrolling to all links buttons
