@@ -1,5 +1,5 @@
 const steam_url = 'https://transpose.pythonanywhere.com/_steam_GetPlayerSummaries'
-$(document).ready(function(){
+function ajaxCall(){
   $.ajax({
     type: 'GET',
     dataType: 'json',
@@ -28,5 +28,11 @@ $(document).ready(function(){
   })
   .fail(function (xhr, textStatus, errorThrown) {
       $('#steam_btn').addClass('offline')
+      $('#steam_btn img').attr('src', data.avatar)
+      $('#steam_btn p').text(data.personaname)
   });
+}
+$(document).ready(function(){
+  ajaxCall()
+  setInterval(function(){ ajaxCall(); }, 10000);
 })
