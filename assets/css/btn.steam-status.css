@@ -1,0 +1,68 @@
+:root {
+  --btn-bg-steam-default: rgba(39,45,55,0.8);
+  --btn-bg-steam-default-hover: rgba(33,59,81,0.9);
+  --btn-bg-steam-gaming: rgba(57,77,26,0.6);
+  --btn-bg-steam-gaming-hover: rgba(57,77,26,0.9);
+  --btn-fg-steam-gaming: rgba(194,255,179,1);
+  --btn-fg-steam-offline: rgba(150,150,150,1);
+  --btn-fg-steam-online: rgba(76,180,255,1);
+  --btn-img-bd-steam-offline: rgba(0,0,0,0);
+  --btn-img-bd-steam-online: rgba(109,207,246,0.6);
+  --btn-img-bd-steam-gaming: rgba(156,236,19,0.6);
+}
+div.fixed-top.steam-status{
+    left: 0;
+    right: inherit;
+    margin: 1em;
+}
+div.steam-status.offline a.btn{
+	background: var(--btn-bg-steam-default);
+	color: var(--btn-fg-steam-offline);
+}
+div.steam-status.offline a.btn:hover{
+	background: var(--btn-bg-steam-default-hover);
+}
+div.steam-status.offline a.btn img{
+	border: var(--btn-img-bd-steam-offline);
+}
+div.steam-status.online a.btn{
+	background: var(--btn-bg-steam-default);
+	color: var(--btn-fg-steam-online);
+}
+div.steam-status.online a.btn:hover{
+	background: var(--btn-bg-steam-default-hover);
+}
+div.steam-status.online a.btn img{
+	border: var(--btn-img-bd-steam-online);
+	border-style: solid!important;
+}
+div.steam-status.gaming a.btn{
+	background: var(--btn-bg-steam-gaming);
+	color: var(--btn-fg-steam-gaming);
+}
+div.steam-status.gaming a.btn:hover{
+	background: var(--btn-bg-steam-gaming-hover);
+}
+div.steam-status.gaming a.btn img{
+	border: var(--btn-img-bd-steam-gaming);
+	border-style: solid!important;
+}
+div.steam-status.online.away a.btn img, div.steam-status.gaming.away a.btn img{
+	border-style: dotted!important;
+}
+div.steam-status a.btn{
+	padding: 0em 0.75em 0 1px;
+	border-radius: 2px;
+	font-size: small;
+	margin: 0;
+}
+div.steam-status a.btn img{
+    margin-right: 0.25em;
+    border-radius: 0px;
+    width: 26px;
+    border-width: 0px 2px 0px 0!important;
+}
+div.steam-status a.btn i{
+    margin-left: 0.25em;
+    font-size: 0.5em;
+}
