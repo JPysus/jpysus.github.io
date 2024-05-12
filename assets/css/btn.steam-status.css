@@ -10,6 +10,15 @@
   --btn-img-bd-steam-online: rgba(109,207,246,0.6);
   --btn-img-bd-steam-gaming: rgba(156,236,19,0.6);
 }
+div#steam_miniprofile{
+	top: 42px;
+	margin: 1em;
+	display: none;
+	opacity: 0.95;
+}
+div#steam_miniprofile *{
+	box-sizing: initial;
+}
 div.fixed-top.steam-status{
     left: 0;
     right: inherit;
