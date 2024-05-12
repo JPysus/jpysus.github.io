@@ -28,7 +28,16 @@
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 		<!--  -->
 
+		<!-- fontawesome -->
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
+		<!--  -->
+
+		<!-- https://github.com/gamer2810/steam-miniprofile? -->
+		<link async rel="preload" as="style" href="https://community.cloudflare.steamstatic.com/public/shared/css/shared_global.css" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript>
+			<link rel="stylesheet" href="https://community.cloudflare.steamstatic.com/public/shared/css/shared_global.css">
+		</noscript>
+		<!--  -->
 
 		<!-- Custom -->
 		<link rel="stylesheet" href="./assets/css/style.css">
@@ -95,17 +104,20 @@
 			</nav>
 
 			<div id="steam_btn" class="">
-				<a class="btn">
+				<a class="btn" href="https://steamcommunity.com/id/JPysus/" target="_blank">
 					<img src="">
 					<p class="d-inline"></p>
 					<i class="fa-solid fa-chevron-down"></i>
 				</a>
 			</div>
+			<!-- https://github.com/gamer2810/steam-miniprofile/blob/master/index.html -->
+			<div id="steam_miniprofile" class="fixed-top"></div>
 		</header>
 		<!--  -->
 		<div>
 			<!-- intro -->
 			<section class="intro full-height align-items-center justify-content-center d-flex mb-4" id="intro">
+				
 				<div class="d-flex flex-column align-items-start">
 					<h4>Yo! I'm </h4>
 					<h1><b>John Michael De Borja.</b></h1> 
@@ -453,9 +465,13 @@
 		</a>
 	</body>
 
+	<!-- DOMPurify -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.3/purify.js" integrity="sha512-iMhyd6iUEGaPXkojpq0Kx7eCPFNVWMGSNW+AgtYi7tXHYsCgtBuPwRWSkYJnZAb8jASgjywzKr8944D5gZ48gQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<!--  -->
+
 	<script src="assets/json/cert_list.json"></script>
 	<script src="assets/json/generated_filenames.json"></script>
-	<script src="assets/js/custom.js"></script>>
+	<script src="assets/js/custom.js"></script>
 	<script src="assets/js/steam_btn.js"></script>
 	<script src="assets/js/animate_custom.js"></script>
 </html>
