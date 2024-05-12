@@ -1,9 +1,8 @@
-const steam_url = 'https://transpose.pythonanywhere.com/_steam_GetPlayerSummaries'
-function ajaxCall(){
+function ajaxCall_steamBtn(){
   $.ajax({
     type: 'GET',
     dataType: 'json',
-    url: steam_url,
+    url: 'https://transpose.pythonanywhere.com/_steam_GetPlayerSummaries',
     crossDomain: true,
     xhrFields: {
       withCredentials: false,
@@ -29,7 +28,29 @@ function ajaxCall(){
   .fail(function (xhr, textStatus, errorThrown) {
   });
 }
+function ajaxCall_steamMiniprofile(){
+  $.ajax({
+    type: 'GET',
+    dataType: 'html',
+    url: 'https://steam-miniprofile-cors.glitch.me/https%3A%2F%2Fsteamcommunity.com%2Fminiprofile%2F'+'76561198195287266',
+    crossDomain: true,
+    xhrFields: {
+      withCredentials: false,
+    },
+  })
+  .done(function (data) {
+    $("#steam_miniprofile").html(DOMPurify.sanitize(data))
+  })
+  .fail(function (xhr, textStatus, errorThrown) {
+    $("#steam_miniprofile").html("")
+  });
+}
 $(document).ready(function(){
-  ajaxCall()
-  setInterval(function(){ ajaxCall(); }, 10000);
+  ajaxCall_steamBtn()
+  ajaxCall_steamMiniprofile()
+  $("#steam_btn")
+    .on("mouseenter",function(){$("#steam_miniprofile").fadeIn( "fast" );})
+    .on("mouseleave",function(){$("#steam_miniprofile").fadeOut( "fast" );})
+  setInterval(function(){ ajaxCall_steamBtn(); ajaxCall_steamMiniprofile()}, 10000);
+
 })
