@@ -10,7 +10,7 @@ function ajaxCall_steamBtn(){
   })
   .done(function (data) {
     
-    $('#steam_btn').attr('class', 'fixed-top steam-status')
+    $('#steam_btn').attr('class', 'steam-status col-2')
     if(data.gameid === undefined && data.personastate !== 0) 
       $('#steam_btn').addClass('online')
     else if(data.gameid !== undefined) 
@@ -48,7 +48,7 @@ function ajaxCall_steamMiniprofile(){
 $(document).ready(function(){
   ajaxCall_steamBtn()
   ajaxCall_steamMiniprofile()
-  $("#steam_btn")
+  $("#steam_btn a.btn")
     .on("mouseenter",function(){$("#steam_miniprofile").fadeIn( "fast" );})
     .on("mouseleave",function(){$("#steam_miniprofile").fadeOut( "fast" );})
   setInterval(function(){ ajaxCall_steamBtn(); ajaxCall_steamMiniprofile()}, 10000);

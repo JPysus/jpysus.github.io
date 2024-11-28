@@ -1,0 +1,57 @@
+:root {
+  --btn-bg-steam-gaming: rgba(57,77,26,0.6);
+  --btn-bg-steam-gaming-hover: rgba(57,77,26,0.9);
+  --spotify-icon: rgba(30,215,96,0.85);
+  --spotify-title-color: white;
+  --spotify-artists-color: rgba(167,167,167,1);
+}
+/*spotify banner css*/
+#spotify_miniprofile div.row{
+  background: black;
+  width: 15em;
+  height: 3.5em;
+  border-radius: 7.5px;
+}
+#spotify_miniprofile img{
+  max-width: 3em;
+  max-height: 3em;
+  border-radius: 5px;
+}
+div#spotify_miniprofile{
+  top: 42px;
+  margin: 1em;
+  display: none;
+  opacity: 0.95;
+}
+
+#spotify_miniprofile .song_title{
+  font-size: small;
+  font: menu;
+}
+#spotify_miniprofile .song_artists{
+  font-size: smaller;
+  font: menu;
+}
+
+#spotify_div .fa-spotify{
+  color:var(--spotify-icon);
+}
+#spotify_div{
+  border-radius: 2px;
+  background: var(--btn-bg-steam-gaming);
+  width: max-content;
+}
+#spotify_div:hover{
+  background: var(--btn-bg-steam-gaming-hover);
+}
+#spotify_div a.preventSelect{
+  padding: 0em 0.75em 0 1px;
+  border-radius: 2px;
+  font-size: small;
+  margin: 0;
+}
+.preventSelect {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}

@@ -43,6 +43,7 @@
 		<link rel="stylesheet" href="./assets/css/style.css">
 		<link rel="stylesheet" href="./assets/css/scroll_to_top.css">
 		<link rel="stylesheet" href="./assets/css/btn.steam-status.css">
+		<link rel="stylesheet" href="./assets/css/spotify.css">
 		<!--  -->
 	</head>
 
@@ -102,16 +103,38 @@
 
 				</div>
 			</nav>
+			<div id="top_right_container" class="m-3 fixed-top container">
+				<div class="row">
+					<div id="steam_btn" class="d-none">
+						<a class="btn" href="https://steamcommunity.com/id/JPysus/" target="_blank">
+							<img src="">
+							<p class="d-inline"></p>
+							<i class="fa-solid fa-chevron-down"></i>
+						</a>
+					</div>
 
-			<div id="steam_btn" class="d-none">
-				<a class="btn" href="https://steamcommunity.com/id/JPysus/" target="_blank">
-					<img src="">
-					<p class="d-inline"></p>
-					<i class="fa-solid fa-chevron-down"></i>
-				</a>
+					<div id="spotify_div" class="d-none">
+						<a class="preventSelect text-light-emphasis text-decoration-none">
+							<i class="fa-brands fa-spotify"></i>
+							<p class="d-inline">♪♪ 🎧 ♪♪</p>
+						</a>
+					</div>
+				<div>
 			</div>
 			<!-- https://github.com/gamer2810/steam-miniprofile/blob/master/index.html -->
 			<div id="steam_miniprofile" class="fixed-top"></div>
+			<div id="spotify_miniprofile" class="fixed-top">
+				<div class="row align-items-center p-1 m-0">
+					<div class="col-3 p-0 text-center">
+						<img class="">
+					</div>
+					
+					<div class="col-9 text-start">
+						<p class="m-0 song_title">
+						<p class="m-0 song_artists">
+					</div> 
+				</div>
+			</div>
 		</header>
 		<!--  -->
 		<div>
@@ -476,5 +499,6 @@
 	<script src="assets/json/generated_filenames.json"></script>
 	<script src="assets/js/custom.js"></script>
 	<script src="assets/js/steam_btn.js"></script>
+	<script src="assets/js/spotify_div.js"></script>
 	<script src="assets/js/animate_custom.js"></script>
 </html>
