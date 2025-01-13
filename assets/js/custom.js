@@ -12,6 +12,10 @@ $(document).bind('keyup', function(e) {
     }
 });
 $(document).ready(function(){
+  /*Constant to show my age*/
+  const age = new Date().getFullYear() - new Date("August 24, 2001").getFullYear();
+  $('#age').html(age)
+
   /*Navbar Scroll*/
   // Add smooth scrolling to all links buttons
   $("a").on('click', function(event) {
