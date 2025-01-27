@@ -62,7 +62,7 @@ body .modal-dialog { /* Width */
   justify-content: center;
   align-items: center;
 }
-.carousel-caption, .carousel-indicators{
+.carousel-caption h5, .carousel-indicators button{
   filter:invert(100%);
 }
 .car_cont.prev{

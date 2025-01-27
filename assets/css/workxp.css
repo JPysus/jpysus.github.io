@@ -1,0 +1,29 @@
+:root {
+  --ubxbg: rgba(0, 0, 0, 0.9);
+  --ubxcompanycolor: rgba(247, 147, 30, 1);
+  --gpbg: linear-gradient(45deg, rgb(255 202 186 / 82%), rgb(255 248 223 / 91%));
+}
+.work .col{
+  max-width: 60rem;
+}
+.work .col .card{
+  height: 100%;
+}
+
+.work .col .card img{
+  max-height: 182px;
+  height: auto;
+  max-width: 182px;
+  width: 100%;
+}
+
+.work.ubx .col .card{
+  background: var(--ubxbg);
+}
+.work.ubx .col .card-title{
+  color: var(--ubxcompanycolor);
+}
+.work.gp .col .card{
+  background: var(--gpbg);
+}
+
