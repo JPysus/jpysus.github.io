@@ -1,5 +1,18 @@
 const cert_list = [
   {
+    "src":"gcloud_cybersecurity.jpg",
+    "alt":"Google Cloud Cybersecurity Certificate",
+    "hed":"Google Cloud Cybersecurity Certificate / Jan. 26, 2025",
+    "add":"<a target='_blank' href='https://www.credly.com/badges/9f489f8d-76fb-4df8-b461-cafc83c84eaa/public_url'>Link</a>",
+    "mor":[
+      {
+        "src":"gcloud_cybersecurity_gcloudcopy.jpg",
+        "hed":"About ~105 hours",
+        "add":"<a target='_blank' href='https://www.cloudskillsboost.google/public_profiles/a9e0f608-26fd-4e1e-b6e6-b53503a9af0a'>Link</a>"
+      }
+    ]
+  },
+  {
     "src":"jpcs_datascience.jpg",
     "alt":"JPCS - Data Science w/ Python",
     "hed":"JPCS - Data Science w/ Python",
