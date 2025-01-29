@@ -32,7 +32,7 @@ function ajaxCall_steamMiniprofile(){
   $.ajax({
     type: 'GET',
     dataType: 'html',
-    url: 'https://steam-miniprofile-cors.glitch.me/https%3A%2F%2Fsteamcommunity.com%2Fminiprofile%2F'+'76561198195287266',
+    url: 'https://transpose.pythonanywhere.com/_steam_GetMiniProfile',
     crossDomain: true,
     xhrFields: {
       withCredentials: false,
