@@ -93,6 +93,7 @@ body .modal-dialog { /* Width */
   width: fit-content;
   margin-right: 20px;
   margin-left:  auto;
+  z-index: 1031
 }
 .navbar-toggler{
   background:var(--grayblue4);
