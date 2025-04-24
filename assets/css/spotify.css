@@ -11,6 +11,10 @@
   width: 15em;
   height: 3.5em;
   border-radius: 7.5px;
+  border-width: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-color: black;
 }
 #spotify_miniprofile img{
   max-width: 3em;

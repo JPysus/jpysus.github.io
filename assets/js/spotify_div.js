@@ -10,13 +10,32 @@ function ajaxCall_spotifyMiniprofile(){
   })
   .done(function (data) {
     if(!data.hasOwnProperty("error") && data["currently_playing_type"] != "ad"){
-      check = data
+      // check = data
+
+
       $('#spotify_div').attr('class', 'col-2 align-content-center')
       
       $("#spotify_miniprofile .song_title").html(data["item"]["name"])
       temp_str = Array.from(data["item"]["album"]["artists"], (x) => x["name"]).join(', ')
       $("#spotify_miniprofile .song_artists").html(temp_str)
       $("#spotify_miniprofile img").attr('src', data["item"]["album"]["images"][0]["url"])
+
+      // get dominant color from picture
+      //https://lokeshdhakar.com/projects/color-thief/#api
+      const colorThief = new ColorThief()
+      const img = new Image()
+
+      img.addEventListener('load', function() {
+        let hexColor = "#" + colorThief.getColor(img).map(
+          x => {
+            const hex = x.toString(16);
+            return hex.length === 1 ? '0' + hex : hex}
+        ).join('')
+        $('#spotify_miniprofile div').css('border-color', hexColor)
+      });
+      
+      img.crossOrigin = 'Anonymous'
+      img.src = data["item"]["album"]["images"][0]["url"]
     }
   })
   .fail(function (xhr, textStatus, errorThrown) {
