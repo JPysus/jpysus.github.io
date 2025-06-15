@@ -2,11 +2,8 @@ function ajaxCall_steamMiniprofile(){
   $.ajax({
     type: 'GET',
     dataType: 'html',
-    url: 'https://steamcommunity.com/miniprofile/235021538',
+    url: 'https://cors-anywhere.herokuapp.com/https://steamcommunity.com/miniprofile/235021538',
     crossDomain: true,
-    headers:{
-      "access-control-allow-origin": "*",
-    },
     xhrFields: {
       withCredentials: false,
     },
