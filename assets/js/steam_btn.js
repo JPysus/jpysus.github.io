@@ -4,6 +4,9 @@ function ajaxCall_steamMiniprofile(){
     dataType: 'html',
     url: 'https://steamcommunity.com/miniprofile/235021538',
     crossDomain: true,
+    headers:{
+      "access-control-allow-origin": "*",
+    },
     xhrFields: {
       withCredentials: false,
     },
