@@ -2,7 +2,7 @@ function ajaxCall_steamMiniprofile(){
   $.ajax({
     type: 'GET',
     dataType: 'html',
-    url: 'https://transpose.pythonanywhere.com/_steam_GetMiniProfile',
+    url: 'https://steamcommunity.com/miniprofile/235021538',
     crossDomain: true,
     xhrFields: {
       withCredentials: false,
