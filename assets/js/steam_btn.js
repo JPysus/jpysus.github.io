@@ -2,7 +2,7 @@ function ajaxCall_steamMiniprofile(){
   $.ajax({
     type: 'GET',
     dataType: 'html',
-    url: 'https://cors-anywhere.herokuapp.com/https://steamcommunity.com/miniprofile/235021538',
+    url: 'https://transpose.vercel.app/_steam',
     crossDomain: true,
     xhrFields: {
       withCredentials: false,

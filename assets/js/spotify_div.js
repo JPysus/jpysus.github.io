@@ -48,6 +48,6 @@ $(document).ready(function(){
   $("#spotify_div")
     .on("mouseenter",function(){$("#spotify_miniprofile").fadeIn( "fast" );})
     .on("mouseleave",function(){$("#spotify_miniprofile").fadeOut( "fast" );})
-  setInterval(function(){ ajaxCall_steamBtn(); ajaxCall_spotifyMiniprofile()}, 10000);
+  // setInterval(function(){ ajaxCall_steamBtn(); ajaxCall_spotifyMiniprofile()}, 10000);
 
 })
