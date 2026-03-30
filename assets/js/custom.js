@@ -57,9 +57,9 @@ $(document).ready(function(){
   for (var i = 0; i < data.length; i++) {
     htmldata += `
               <div class="col">
-                <div class="skill_div p-3">
+                <div class="skill_div align-content-center p-3">
                   <img class="skill_img d-block pb-3" src="assets/images/icons/`+escape(data[i])+`"/>
-                  <h4 class="skill_name">`+data[i].substr(0, data[i].length - 4).replace('_', ' ')+`</h4>
+                  <h4 class="skill_name">`+data[i].substr(0, data[i].length - 4).replace(/_/g, ' ')+`</h4>
                 </div>
               </div>
     `

@@ -241,6 +241,9 @@ body .modal-dialog { /* Width */
   margin:0;
   background: var(--whiteblue3);
 }
+.skill_img{
+  max-width: 100px!important;
+}
 .skill_container{
   background: var(--black1);
   border-radius: 20px;
