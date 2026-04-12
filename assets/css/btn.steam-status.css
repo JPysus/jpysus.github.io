@@ -16,6 +16,9 @@ div#steam_miniprofile{
 	display: none;
 	opacity: 0.95;
 }
+div#steam_miniprofile .miniprofile_container{
+	border-radius: 10px;
+}
 div#steam_miniprofile *{
 	box-sizing: initial;
 }
