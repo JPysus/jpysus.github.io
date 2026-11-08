@@ -3,7 +3,7 @@
   # Scroll-to-Top Button
   --------------------------------------------------------------*/
   :root {
-    --back-to-top-button-size: 2.8em;
+    --back-to-top-button-size: 3em;
   
     --color-accent: hsl(255 100% 50%);
     --color-accent-bright: hsl(210, 100%, 49%);

@@ -110,7 +110,9 @@ body .modal-dialog { /* Width */
 .full-height{
   min-height:100vh;
 }
-
+.card, .card_bg, .skill_container, .navbar-nav{
+  backdrop-filter: blur(4px);
+}
 .card-text{
   text-align: justify;
 }

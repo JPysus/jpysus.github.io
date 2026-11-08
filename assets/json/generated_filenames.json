@@ -1,4 +1,5 @@
 const data = [
+    "Angular.png",
     "AspNet.png",
     "Azure.png",
     "C#.png",
